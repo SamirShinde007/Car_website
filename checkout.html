@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay Integration</title>
+
+    <!-- Razorpay Checkout Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <!-- Basic CSS for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .payment-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .payment-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        #payButton {
+            background-color: #f37254;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #payButton:hover {
+            background-color: #d86045;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-container">
+    <h2>Checkout Page</h2>
+    <p>Click the button below to proceed with the payment.</p>
+    <button id="payButton">Pay Now</button>
+</div>
+
+<script type="script" src="./razorpay.js"></script>
+
+
+</body>
+</html>

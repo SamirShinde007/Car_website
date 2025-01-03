@@ -1,0 +1,339 @@
+        * {
+            margin: 0;
+            font-family: verdana;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            scroll-padding: 2rem;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;        
+          }
+          
+        .navbar {
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            height: 40px;
+        }
+
+        .nav-1 {
+            width: 20%
+        }
+        .nav-1 a{
+            color: rgb(255, 221, 0);
+            margin-top: -4px;
+            text-align: center;
+            padding-left: 20px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-2 {
+            text-align: center;
+            width: 80%;
+        }
+
+        .nav-2 a {
+            margin-left: 10%;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: rgb(255, 221, 0);
+            font-weight: 500;
+        }
+
+
+        .main-container {
+            width: 100%;
+            height: 100vh;
+          background-image: url(https://i.postimg.cc/26qRhbdp/background.png); 
+          background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: 20%;
+        }
+    
+
+        .main-heading h4{
+            text-align: center;
+            margin-top: 11%;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(255, 221, 0);
+        }
+        .main-heading h2 {
+            text-align: center;
+            margin-top: 1%;
+            font-size: 29px;
+            font-weight: bold;
+            color: rgb(255, 221, 0);
+        }
+        .main-heading p{
+            text-align: center;
+            /* padding: 160px; */
+            padding-top: 10px;
+            /* max-width: 80vb; */
+            /* margin-top: 10px; */
+            color: white;
+        }
+        .main-heading button, a{
+            text-align: center;
+            margin-top: 1%;
+            color: white;
+            background-color: transparent;
+        }
+
+
+    
+        /* Basic styling for the heading container */
+        .heading {
+            width: 100%;
+            height: 50px;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            text-transform: capitalize;
+            background-color: whitesmoke;
+        }
+
+        .heading h2 {
+            padding-top: 7px;
+            text-align: center;
+            color: black;
+        }
+
+        
+        /* Basic styling for the about container */
+
+        .home-container {
+            width: 100%;
+            height: 250px;
+        }
+
+        .home-container .info {
+            width: 100%;
+            display: flex;
+        }
+
+        .info div {
+            margin: 10px;
+            padding: 10px;
+            width: 32%;    
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+            text-align: center;
+            border-right: 2px solid lightgrey;
+        }
+
+        .info .box h6 {
+            font-size: 16px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .info .box img{
+            width: 70px;
+            text-align: center;
+        }
+    
+
+        .two{
+            display: flex;
+            margin-top: -34px;
+            padding-top: 0px;
+        }
+        .c1{
+            padding-top: 0px;
+            padding: 60px;
+            margin-top: -70px;
+            width: 80%;
+        }
+        .c2{
+            width: 20%;    
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+            padding: 30px;
+            text-transform: capitalize;
+        }
+        .c2 h6{
+            font-weight: lighter;
+            font-size: 18px;
+            margin-top: 5px;
+            text-align: center;
+        }
+        /* Basic styling for the card container */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .card-info {
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            padding-left: 100px;
+        }
+
+        /* Styling for the cab image */
+        .cab-img {
+            width: 70%;
+        }
+
+        .card img {
+            width: 160px;
+            padding: 10px;
+            text-align: center;
+            height: 160px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .card-content {
+            padding: 15px;
+            width: 30%;
+            text-align: left;
+            padding-left: 7rem;
+        }
+
+
+        .card h1 {
+            text-align: center;
+            text-transform: capitalize;
+            color: rebeccapurple;
+        }
+
+        .cab-info {
+            font-size: 14px;
+            color: #555;
+            font-size: 16px;
+            text-align: justify;
+            color: #555;
+        }
+
+        .card a{
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+        .card button{
+            border: 0px;
+            width: 40%;
+            height: 24px;
+            background-color: greenyellow;
+        }
+    
+
+
+        /* Basic styling for the review container */
+            .review {
+                width: 100%;
+                display: flex;
+            }
+    
+            .review .r1,
+            .r2 {
+                width: 50%;
+                margin: 10px;   
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              
+            }
+    
+            .review p {
+                text-align: left;
+            }
+    
+            .review img {
+                width: 100px;
+            }
+    
+            .review .r1 {
+                display: flex;
+            }
+    
+            .review .r2 {
+                display: flex;
+            }
+            .review h5{
+                font-size: 19px;
+            }
+            
+
+
+
+            
+
+            
+        /* Basic styling for the car products container */
+  
+    .inner-tarrif {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .inner-tarrif div {
+        width: 33%;   
+        height: 400px;
+    }
+
+    .inner-box h2 {
+        text-align: center;
+    }
+
+    .inner-tarrif img {
+        display: block;
+        margin: auto;
+        width: 240px;
+    }
+
+
+
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        height: 190px;
+        text-transform: capitalize;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .column h2 {
+        padding-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .column p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #f_p{
+        height: 100px;
+        padding-top: 20px;
+        background-color: #333;
+        color: #fff; text-align:center
+    }
+
+    .five hr{
+        width: 0 10px;
+    }
