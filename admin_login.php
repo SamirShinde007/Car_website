@@ -1,6 +1,5 @@
 <?php
-session_start(); 
-
+session_start();
 ?>
 
 <html lang="en">
@@ -14,28 +13,47 @@ session_start();
 </head>
 
 <body>
+    <div class="login">
+        <div class="login-container">
+            <h2>Admin Login</h2>
+            <form id="loginForm" action="admin_login.php" method="post" onsubmit="return validateForm()">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
 
-    <body>
-        <div class="login">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
 
-            <div class="login-container">
-                <h2>Admin Login</h2>
-                <form id="loginForm" action="admin_login.php" method="post">
-                    <label for="email">email:</label>
-                    <input type="email" name="email" id="email" required>
+                <button type="submit" name="submit">Login</button>
+            </form>
 
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <button type="submit" name="submit">Login</button>
-                </form>
-
-                <a href="./admin_register.php" class="signup-link">Don't have an account? Sign up</a>
-            </div>
+            <a href="./admin_register.php" class="signup-link">Don't have an account? Sign up</a>
         </div>
-    </body>
-</html>
+    </div>
 
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Regular expression for email validation
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Regular expression for password validation (at least one letter, one number, and one special character)
+            var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/;
+            if (!passwordPattern.test(password)) {
+                alert("Password must be at least 6 characters long and contain at least one letter, one number, and one special character.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
 
 <?php
 include('db/connection.php');
@@ -50,8 +68,10 @@ if (isset($_POST['submit'])) {
             $_SESSION['email'] = $email;
             header('location:home.php');
         } else {
-            echo "<script> alert('Try Again , Email & Password is not matched...!')</script>";
+            echo "<script>alert('Invalid email or password. Please try again.')</script>";
         }
+    } else {
+        echo "<script>alert('Database query failed. Please try again.')</script>";
     }
 }
 ?>

@@ -4,11 +4,11 @@
     color: #fff;        
   }
 .box1 {
-    margin-top: -50px;
-    margin-left: 15rem;
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
+    margin-top: -8px;
+    margin-left: 28rem;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 43px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
@@ -104,7 +104,7 @@ select {
 .box3 th,
 td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 7px;
     text-transform: capitalize;
     text-align: center;
 }

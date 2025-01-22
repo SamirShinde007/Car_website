@@ -4,7 +4,7 @@ if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['name'] . "@example.com";
     $mobileno = $_POST['mobileno'];
-    $amount = $_POST['amount'];
+    $amount = $_POST['total_cost'];
     $orderid = 'OID' . rand(10, 100) . 'END';
 ?>
 
@@ -12,12 +12,12 @@ if (isset($_POST['submit'])) {
 <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="<?php echo $apiKey; ?>" 
-    data-amount="<?php echo $_POST['amount'] * 100;?>" 
+    data-amount="<?php echo $_POST['total_cost'] * 100;?>" 
     data-currency="INR"
     data-id="<?php echo 'OID'.rand(10,100).'END';?>"
     data-buttontext="Pay with Razorpay"
     data-name="CABHUB"
-    data-description="Training & Development!"
+    data-description="CABHUB"
     data-image="https://traidev.com/img/web-desgin-development.png"
     data-prefill.name="<?php echo $_POST['name'];?>"
     data-prefill.email="<?php echo $_POST['email'];?>"

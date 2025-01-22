@@ -18,7 +18,7 @@ error_reporting(0);
 <div class="content">
     <div class="box3">
 
-        <h2>All cab with details</h2>
+        <h2>Cab With Details</h2>
 
         <table>
             <tr>

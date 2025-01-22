@@ -20,7 +20,9 @@
                     <a href="index.php">home</a>
                     <a href="#about">About</a>
                     <a href="./book_cab.php">Booking</a>
+                    <a href ="./viewbooking.php">View Booking Details</a>
                     <a href="./feedback.php">Feedback</a>
+                    <a href="./logout.php">logout</a>
                 </div>
             </div>
             <div class="main-heading">
@@ -59,6 +61,7 @@
                             <p class="cab-info">Price :<?php echo $row['price']; ?></p>
                             <p class="cab-info">Driver Name :<?php echo $row['dri_name']; ?></p>
                             <p class="cab-info">Driver No :<?php echo $row['dri_no']; ?></p>
+                            <!-- <p class="cab-info">Driver licence:<?php echo $row['dri_li']; ?></p> -->
 
                             <h5><button><a href="book_cab.php">Book Now</a></button></h5>
                         </div>
@@ -89,45 +92,105 @@
             <?php } ?>
         </div>
     </section>
+<hr>
 
+   <div class="heading">
+    <h2> Vehicles</h2>
+</div>
 
-    <div class="heading">
-        <h2>Our Vehicals</h2>
-    </div>
+<section class="three">
+    <div class="vehicle-container">
+        
+         <!-- <div class="container">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#suv">SUV</a></li>
+                <li><a href="#luxury">Luxury</a></li>
+                <li><a href="#sportscar">Sports Cars</a></li>
+            </ul>
+        </div> -->
 
-    <section class="three">
+        <!-- Main Vehicle Content -->
         <div class="main-tariff">
-            <div class="inner-tarrif">
-                <div class="inner-box">
+            <div class="inner-tarrif"> 
+                <hr>
+                <div class="inner-box" id="suv">
+                    <hr>
                     <img src="images/wegnar.png" alt="image of wegnar">
                     <h2>Wegnar car</h2><br>
-                    <p> Behind the wheel of Wegnar Car is our dedicated and professional driver, known for their
-                        courteous demeanor and expert navigation skills. Meet our average Wegnar Car driver, rohan
-                        kale, whose commitment to customer satisfaction and safe driving practices sets the
-                        benchmark for excellence in the cab service industry. </p>
+                    <p>Spacious and comfortable, ideal for family trips.</p>
+                     <p>Seats up to 5 passengers.</p>
+                    <p>Ample boot space for luggage.</p>
+                    <p>Fuel-efficient and reliable.</p>
+                    <p>Perfect for city and highway driving.</p>
+                    <p>Available in multiple colors.</p> <br><br><br><br><hr>
+                </hr>
                 </div>
-                <div class="inner-box">
+            </hr>
+                <hr>
+                 <div class="inner-box" id="luxury">
+                    <hr>
                     <img src="images/swift.png" alt="image of swift">
-                    <h2 class="heading-yellow">Swift car</h2>
-                    <br>
-                    <p>At the helm of Swift Car is our skilled and reliable driver, soham mane, embodying the
-                        essence of professionalism and customer-centric service. soham ensures a pleasant journey
-                        for
-                        passengers, combining her knowledge of the city's roads with a friendly demeanor.</p>
+                    <h2 class="heading-yellow">Swift car</h2><br>
+                    <p>Compact and fuel-efficient, perfect for city rides.</p>
+                    <p>Seats up to 4 passengers.</p>
+                    <p>Easy to maneuver in traffic.</p>
+                    <p>Low maintenance cost.</p>
+                    <p>Stylish design and comfortable interior.</p>
+                    <p>Great for daily commutes.</p><br><br><br> <hr>
                 </div>
+                <hr> 
                 <div class="inner-box">
-                    <img src="images/innova.png" alt="image of innova">
-                    <h2>Innova car</h2><br>
-                    <p> Behind the wheel of Innova Car is our seasoned driver, anil deshmukh. anil is the
-                        embodiment of professionalism, known for her excellent driving skills and commitment to
-                        customer satisfaction. Choose the Innova Car for a journey that fuses comfort, safety, and
-                        efficiency, making every ride an enjoyable and memorable experience for our valued
-                        passengers.</p>
+                    <hr>
+                    <img src="images/Ertiga.png" alt="image of Ertiga">
+                   
+                    <h2 class="heading-yellow">Ertiga car</h2><br>
+                     <p>Stylish and versatile, great for long journeys.</p>
+                    <p>Seats up to 7 passengers.</p>
+                    <p>Spacious interior with flexible seating.</p>
+                    <p>Advanced safety features.</p>
+                    <p>Fuel-efficient and powerful engine.
+                    <p>Ideal for family vacations. <br><br><br><br><br><hr>
+                    <br>
                 </div>
+                <hr>
+                <div class="inner-box" id="sportscar">
+                    <hr>
+                    <img src="images/innova.png" alt="image of innova">
+                  
+                    <h2>Innova car</h2><br>
+                    <p>Luxurious and powerful, suitable for all terrains.</p>
+                     <p>Seats up to 8 passengers.</p>
+                    <p>High ground clearance for rough roads.</p>
+                    <p>Premium interior with advanced features.</p>
+                    <p>Strong and durable build.</p>
+                    <p>Perfect for long-distance travel.</p><br><br><br>
+                     <hr>
+                </div>
+                <hr>
+                
+                 <div class="inner-box" id="sportscar">
+                    <hr>
+                    <img src="images/scorpio.png" alt="image of scorpio">
+                    <h2>scorpio car</h2><br>
+                    <p>Rugged and reliable, perfect for off-road adventures.</p>
+                    <p>Seats up to 7 passengers.</p>
+                    <p>Powerful engine with high torque.</p>
+                    <p>Advanced 4x4 capabilities.</p>
+                    <p>Robust design and build quality.</p>
+                    <p>Ideal for adventurous trips.</p><br><br><br><br>
+                    <hr>
+                </div>
+                <hr>
             </div>
+            
         </div>
+        
+    </div>
+    <hr>
+</section>
 
-    </section>
+
 
     <div class="heading" id="about">
         <h2>About <span class="color">CabHub</span></h2>
@@ -163,6 +226,7 @@
                 </div>
             </div>
         </div>
+        <hr>
 
     </section>
 
@@ -222,8 +286,9 @@
             <div class="column">
                 <h2>Contact Us</h2><br>
                 <hr><br>
-                <p>Email: cabHub@example.com</p><br>
-                <p>Phone: +9874563201</p><br>
+                <p>Email: cabHub@gamil.com</p><br>
+                <p>Phone: +8010300951
+                </p><br>
                 <p>Facebook
                     Twitter</p>
             </div>

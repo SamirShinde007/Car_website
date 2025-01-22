@@ -6,7 +6,7 @@
             "key": "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay Key ID
             "amount": 50000, // Amount in paise (50000 = 500 INR)
             "currency": "INR",
-            "name": "Your Company Name",
+            "name": "CABHUB",
             "description": "Purchase Description",
             "image": "https://your-company-logo-url", // Optional company logo
             "order_id": "ORDER_ID_FROM_BACKEND", // Replace with generated order ID

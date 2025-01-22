@@ -69,7 +69,10 @@ CREATE TABLE `cab_book` (
   `location_end` varchar(100) NOT NULL,
   `payment` varchar(100) NOT NULL,
   `latitude` varchar(100) NOT NULL,
-  `longitude` varchar(100) NOT NULL
+  `longitude` varchar(100) NOT NULL,
+  'cost'int(100) NOT NULL,
+  'total_distance' int(100) NOT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------

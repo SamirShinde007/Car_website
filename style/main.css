@@ -1,16 +1,17 @@
         * {
             margin: 0;
-            padding: 0;
+            padding: 1;
         }
-        body{
+
+        body {
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
-            color: #fff;        
+            color: #fff;
             overflow-x: hidden;
             scroll-behavior: smooth;
             scroll-padding: 2rem;
-          }
-          
+        }
+
         .navbar {
             width: 100%;
             padding: 10px;
@@ -22,7 +23,8 @@
         .nav-1 {
             width: 20%
         }
-        .nav-1 a{
+
+        .nav-1 a {
             color: rgb(255, 221, 0);
             margin-top: -4px;
             text-align: center;
@@ -34,7 +36,7 @@
 
         .nav-2 {
             text-align: center;
-            width: 80%;
+            width: 150%;
         }
 
         .nav-2 a {
@@ -50,36 +52,40 @@
         .main-container {
             width: 100%;
             height: 100vh;
-          background-image: url(https://i.postimg.cc/26qRhbdp/background.png); 
-          background-size: 100% 100%;
+            background-image: url(https://i.postimg.cc/26qRhbdp/background.png);
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             background-position: 20%;
         }
-    
 
-        .main-heading h4{
+
+        .main-heading h4 {
             text-align: center;
             margin-top: 11%;
             font-size: 20px;
             font-weight: bold;
             color: rgb(255, 221, 0);
         }
+
         .main-heading h2 {
             text-align: center;
-            margin-top: 1%;
+            /* margin-top: 20%; */
             font-size: 29px;
             font-weight: bold;
             color: rgb(255, 221, 0);
         }
-        .main-heading p{
+
+        .main-heading p {
             text-align: center;
-            /* padding: 160px; */
+            padding: 160px;
             padding-top: 10px;
             /* max-width: 80vb; */
-            /* margin-top: 10px; */
+            margin-top: 10px;
             color: white;
         }
-        .main-heading button, a{
+
+        .main-heading button,
+        a {
             text-align: center;
             margin-top: 1%;
             color: white;
@@ -87,7 +93,7 @@
         }
 
 
-    
+
         /* Basic styling for the heading container */
         .heading {
             width: 100%;
@@ -95,16 +101,16 @@
             margin-top: 4rem;
             margin-bottom: 4rem;
             text-transform: capitalize;
-            background-color: whitesmoke;
+            background-color: #1a1a1a;
         }
 
         .heading h2 {
             padding-top: 7px;
             text-align: center;
-            color: black;
+            color: rgb(255, 255, 255);
         }
 
-        
+
         /* Basic styling for the about container */
 
         .home-container {
@@ -120,11 +126,10 @@
         .info div {
             margin: 10px;
             padding: 10px;
-            width: 32%;    
+            width: 32%;
             border: 1px solid #ccc;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.226);
-        
             text-align: center;
             border-right: 2px solid lightgrey;
         }
@@ -135,38 +140,41 @@
             text-align: center;
         }
 
-        .info .box img{
+        .info .box img {
             width: 70px;
             text-align: center;
         }
-    
 
-        .two{
+
+        .two {
             display: flex;
             margin-top: -34px;
             padding-top: 0px;
         }
-        .c1{
+
+        .c1 {
             padding-top: 0px;
             padding: 60px;
             margin-top: -70px;
             width: 80%;
         }
-        .c2{
-            width: 20%;    
+
+        .c2 {
+            width: 20%;
             border: 1px solid #ccc;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        
             padding: 30px;
             text-transform: capitalize;
         }
-        .c2 h6{
+
+        .c2 h6 {
             font-weight: lighter;
             font-size: 18px;
             margin-top: 5px;
             text-align: center;
         }
+
         /* Basic styling for the card container */
         .card {
             border: 1px solid #ccc;
@@ -212,127 +220,133 @@
 
         .cab-info {
             font-size: 14px;
-            color: #555;
-            font-size: 16px;
+            color: #ffffff;
+            font-size: 17px;
             text-align: justify;
-            color: #555;
+            color: #ffffff;
         }
 
-        .card a{
+        .card a {
             text-align: center;
             text-decoration: none;
             color: black;
         }
-        .card button{
+
+        .card button {
             border: 0px;
             width: 40%;
             height: 24px;
             background-color: greenyellow;
         }
-    
+
 
 
         /* Basic styling for the review container */
-            .review {
-                width: 100%;
-                display: flex;
-            }
-    
-            .review .r1,
-            .r2 {
-                width: 50%;
-                margin: 10px;   
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              
-            }
-    
-            .review p {
-                text-align: left;
-            }
-    
-            .review img {
-                width: 100px;
-            }
-    
-            .review .r1 {
-                display: flex;
-            }
-    
-            .review .r2 {
-                display: flex;
-            }
-            .review h5{
-                font-size: 19px;
-            }
-            
+        .review {
+            width: 100%;
+            display: flex;
+        }
+
+        .review .r1,
+        .r2 {
+            width: 50%;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .review p {
+            text-align: left;
+        }
+
+        .review img {
+            width: 100px;
+        }
+
+        .review .r1 {
+            display: flex;
+        }
+
+        .review .r2 {
+            display: flex;
+        }
+
+        .review h5 {
+            font-size: 19px;
+        }
 
 
 
-            
 
-            
+
+
+
         /* Basic styling for the car products container */
-  
-    .inner-tarrif {
-        display: flex;
-        width: 100%;
-        padding: 10px;
-    }
 
-    .inner-tarrif div {
-        width: 33%;   
-        height: 400px;
-    }
+        .inner-tarrif {
+            display: flex;
+            width: 90%;
+            padding: 83px;
+        }
 
-    .inner-box h2 {
-        text-align: center;
-    }
+        .inner-tarrif div {
+            width: 33%;
+            height: 400px;
+        }
 
-    .inner-tarrif img {
-        display: block;
-        margin: auto;
-        width: 240px;
-    }
+        .inner-box h2 {
+            text-align: center;
+        }
+
+        .inner-tarrif img {
+            display: block;
+            margin: auto;
+            width: 271px;
+        }
+         .inner-box p {
+            text-align: center;
+       }
 
 
 
 
-    footer {
-        background-color: #1a1a1a;
-        color: #fff;
-        padding: 20px;
-        height: 190px;
-        text-transform: capitalize;
-        margin-top: 4rem;
-        display: flex;
-        justify-content: space-between;
-    }
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            height: 190px;
+            text-transform: capitalize;
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+        }
 
-    .column {
-        flex: 1;
-        margin-right: 20px;
-    }
+        .column {
+            flex: 1;
+            margin-right: 20px;
+        }
 
-    .column h2 {
-        padding-top: 20px;
-        font-size: 20px;
-        text-align: center;
-    }
+        .column h2 {
+            padding-top: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
 
-    .column p {
-        text-align: center;
-        font-size: 14px;
-    }
+        .column p {
+            text-align: center;
+            font-size: 14px;
+        }
 
-    #f_p{
-        height: 100px;
-        padding-top: 20px;
-        background-color: #333;
-        color: #fff; text-align:center
-    }
+        #f_p {
+            height: 100px;
+            padding-top: 20px;
+            background-color: #1a1a1a;
+            color: rgb(255, 221, 0);
+            text-align: center
+        }
 
-    .five hr{
-        width: 0 10px;
-    }
+        .five hr {
+            width: 0 10px;
+        }

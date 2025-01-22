@@ -18,7 +18,7 @@ if ($query) {
 
 <?php
 include('db/connection.php');
-$query = mysqli_query($conn, "delete from cab_book where id='$id'");
+$query = mysqli_query($conn, "delete from cab_booking where id='$id'");
 
 if ($query) {
     echo  "<script> alert('cab booking details Has Been Deleted....!')</script>";

@@ -53,7 +53,11 @@ include('include/header.php');
         <hr><br>
         <p>15</p>
       </section>
-    </div>
+    </div> <section id="reports">
+        <h2>Monthly Earning</h2>
+        <hr><br>
+        <p>₹ 50,000</p>
+      </section>
     <div class="content-two">
       <section id="bookings">
         <h2>Total Bookings</h2>

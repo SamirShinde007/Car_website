@@ -72,7 +72,6 @@
             <h5><a href="add_cab.php">Add new Cab</a></h5>
            <h5><a href="cab_info.php">Cab Details</a></h5>
             <h5><a href="book_info.php">Booking Details</a></h5>
-            <h5><a href="add_locations.php">Add working Locations</a></h5>
             <h5><a href="location_info.php">Add Locations details</a></h5>
             <h5><a href="feedback_info.php">feedback info</a></h5>
            <h5><a href="admin_logout.php">logout</a></h5>

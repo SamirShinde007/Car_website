@@ -20,13 +20,13 @@ error_reporting(0);
 <div class="content">
     <div class="box3">
 
-        <h2>All user information  details</h2>
+        <h2> User Information  Details</h2>
 
         <table>
             <tr>
                 <th>id</th>
                 <th>username</th>
-                <th>mobile no</th>
+                <!-- <th>mobile no</th> -->
                 <th>email</th>
                 <th>password</th>
             </tr>
@@ -39,7 +39,7 @@ error_reporting(0);
                 <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['username']; ?></td>
-                    <td><?php echo $row['mobileno']; ?></td>
+                    
                     <td><?php echo $row['email']; ?></td>
                     <td>*********</td>
                 </tr>

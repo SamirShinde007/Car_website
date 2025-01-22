@@ -9,37 +9,52 @@
 </head>
 
 <body>
+    <div class="login">
+        <div class="login-container">
+            <h2> Login</h2>
+            <form id="loginForm" action="login.php" method="post" onsubmit="return validateForm()">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
 
-    </head>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
 
-    <body>
-        <div class="login">
+                <button type="submit" name="submit">Login</button>
+            </form>
 
-            <div class="login-container">
-                <h2> Login</h2>
-                <form id="loginForm" action="login.php" method="post">
-                    <label for="email">email:</label>
-                    <input type="email" name="email" id="email" required>
-
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <button type="submit" name="submit">Login</button>
-                </form>
-
-                <a href="./signup.php" class="signup-link">Don't have an account? Sign up</a>
-            </div>
+            <a href="./signup.php" class="signup-link">Don't have an account? Sign up</a>
         </div>
+    </div>
 
-    </body>
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Regular expression for email validation
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Regular expression for password validation (at least one letter, one number, and one special character)
+            var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/;
+            if (!passwordPattern.test(password)) {
+                alert("Password must be at least 6 characters long and contain at least one letter, one number, and one special character.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
 
 </html>
 
 <?php
 session_start(); 
-
 ?>
-
 
 <?php
 include('db/connection.php');
